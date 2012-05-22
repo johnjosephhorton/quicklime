@@ -1,0 +1,5 @@
+#Links used by the script
+
+LimeSurvey download:
+
+http://download.limesurvey.org/Latest_stable_release/limesurvey192plus-build120517.tar.gz
