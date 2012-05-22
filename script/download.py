@@ -9,6 +9,7 @@ import urllib2
 url="http://download.limesurvey.org/Latest_stable_release/limesurvey192plus-build120517.tar.gz"
 file_name = 'limesurvey.tar.gz'
 download_dir = '/opt/'
+download_dir = '.'
 #file_name = url.split('/')[-1]
 
 
