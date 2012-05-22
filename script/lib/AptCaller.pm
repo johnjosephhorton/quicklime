@@ -1,16 +1,16 @@
-#!/usr/bin/perl
+#! /usr/bin/perl
 
 # Paolo Lulli 2012
+
+# Raw wrapper for underlying apt-commands
 
 use strict;
 use warnings;
 
-
-our $apt_package_file; 
-
 sub aptInstall(){
-	($package) = @_;
+	my ($package) = @_;
 	print "$package\n";
+	my $var= `yes| apt-get install $package`;
 }
 
 1;
