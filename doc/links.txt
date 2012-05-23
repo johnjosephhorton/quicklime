@@ -13,3 +13,9 @@ apache2
 php5
 php5-mysql
 php-cli
+
+
+To install packages in an UN-interactive fashion:
+
+export DEBIAN_FRONTEND=noninteractive
+apt-get -q -y install mysql-server-5.0

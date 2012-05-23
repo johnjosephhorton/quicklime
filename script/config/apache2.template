@@ -1,12 +1,12 @@
 <VirtualHost *:80>
 	ServerAdmin webmaster@localhost
 
-	DocumentRoot /var/www
+	DocumentRoot /var/www/limesurvey
 	<Directory />
 		Options FollowSymLinks
 		AllowOverride None
 	</Directory>
-	<Directory /opt/limesurvey/>
+	<Directory /var/www/limesurvey>
 		Options Indexes FollowSymLinks MultiViews
 		AllowOverride None
 		Order allow,deny
