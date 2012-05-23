@@ -26,7 +26,7 @@ class Limesurvey:
 			print 'Installing dependency: [' + dep + ']'
 			cmdstring = 'apt-get install ' + dep
 			print 'DEBUG: ' + cmdstring
-#			os.system(cmdstring)
+			os.system(cmdstring)
 
 	def download_limesurvey(self):
 		u = urllib2.urlopen(url)
