@@ -24,7 +24,7 @@ class Limesurvey:
 		"""APT modules install"""
 		for dep in dependencies:
 			print 'Installing dependency: [' + dep + ']'
-			cmdstring = 'apt-get install ' + dep
+			cmdstring = 'DEBIAN_FRONTEND=noninteractive; apt-get -q -y install ' + dep
 			print 'DEBUG: ' + cmdstring
 			os.system(cmdstring)
 

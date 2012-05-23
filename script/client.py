@@ -2,8 +2,8 @@
 # Paolo Lulli 2012
 #
 
-from limesurvey import limesurvey
+from limesurvey import Limesurvey
 
-lm = limesurvey()
+lm = Limesurvey()
 lm.f("aaaaaaaa")
 
