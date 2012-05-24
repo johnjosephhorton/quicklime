@@ -42,13 +42,13 @@ start a new instance from the following AMI: <code> ami-e1e8d395 </code>
 On the new instance, you will only need to transfer the code, i.e. doing:
 
 <code>
-scp -i <secret-key>.pem -r quicklime.tar.gz root@<hostname>:
+scp -i <secret-key>.pem -r quicklime.tar.gz root@&lt;hostname&gt;:
 </code>
 
 or simply:
 
 <code>
-scp  -r quicklime.tar.gz root@<hostname>:
+scp  -r quicklime.tar.gz root@&lthostname&gt;:
 </code>
 
 Then login on your brand new machine (or AMI instance):
