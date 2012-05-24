@@ -83,27 +83,17 @@ class Limesurvey:
 		os.system(restart_cmd)
 
 	def post_install(self):
-		cmd = 'cat /var/www/limesurvey/admin/install/create-mysql.sql | mysql -u root '+  db_instance
+		cmd='curl --data-urlencode "createdbstep2=Populate database" http://127.0.0.1:80/limesurvey/admin/install/createdb.php'
 		os.system(cmd)
-		# ALT: curl 127.0.0.1:80/limesurvey/admin/install/index.php
 		shutil.rmtree('/var/www/limesurvey/admin/install')
 		
-# TODO
-#
-# - import limesurvey db
-# - move away admin/install directory
-# - clean up the config options
-
-#/var/www/limesurvey/admin/install/create-mysql.sql
-# cat /var/www/limesurvey/admin/install/create-mysql.sql  | mysql -u root  db_instance 
-# rm -fr /var/www/limesurvey/admin/install
 
 	
 if __name__ == "__main__":
 	lm = Limesurvey()
-	#lm.install_dependencies()
-	#lm.download_limesurvey()
-	#lm.unpack_limesurvey()
+	lm.install_dependencies()
+	lm.download_limesurvey()
+	lm.unpack_limesurvey()
 	lm.db_install()
 	lm.db_create_user()
 	lm.apache_config()
