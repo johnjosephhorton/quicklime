@@ -75,8 +75,3 @@ the following apt packages:
 - php5-mysql
 
 plus the <code>curl</code> executable
-
-#! /bin/bash -x
-
-cd $(dirname $0)
-
