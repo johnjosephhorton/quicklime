@@ -1,5 +1,6 @@
 QuickLime
 =========
+Version 1.0 May 2012  - by Paolo Lulli
 
 About QuickLime
 ------------------------------
