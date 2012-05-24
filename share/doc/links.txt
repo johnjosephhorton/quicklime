@@ -1,0 +1,21 @@
+#Links used by the script
+
+LimeSurvey download:
+
+http://download.limesurvey.org/Latest_stable_release/limesurvey192plus-build120517.tar.gz
+
+
+Apt packages:
+
+mysql-client
+mysql-server
+apache2
+php5
+php5-mysql
+php-cli
+
+
+To install packages in an UN-interactive fashion:
+
+export DEBIAN_FRONTEND=noninteractive
+apt-get -q -y install mysql-server-5.0
