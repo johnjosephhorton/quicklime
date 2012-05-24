@@ -5,13 +5,15 @@ About LimeSurvey
 ------------------------------
 
 LimeSurvey is a GPL licensed software to create surveys; it runs nicely on
-a LAMP stack. You can download it from [here] (http://download.limesurvey.org/Latest_stable_release/limesurvey192plus-build120517.tar.gz "limesurvey")
+a LAMP stack. 
+You can download it from [here] (http://download.limesurvey.org/Latest_stable_release/limesurvey192plus-build120517.tar.gz "limesurvey")
 
 
 LimeSurvey, the easy way
 ------------------------------
 
-QuickLime is an installer for LimeSurvey; works in Ubuntu like a breeze.
+QuickLime is an installer for LimeSurvey; 
+it works in Ubuntu like a breeze.
 You only have to launch the script as user <code>root</code>:
 <pre><code>cd script
 ./quicklime
