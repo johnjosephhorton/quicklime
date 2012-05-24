@@ -12,7 +12,7 @@ LimeSurvey, the easy way
 ------------------------------
 
 QuickLime is an installer for LimeSurvey; works in Ubuntu like a breeze.
-You only have to launch the script as user <pre>root</pre>:
+You only have to launch the script as user <code>root</code>:
 <pre><code>cd script
 ./quicklime
 </code></pre>
