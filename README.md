@@ -5,7 +5,7 @@ About QuickLime
 ------------------------------
 
 LimeSurvey is a GPL licensed software to create surveys; it runs nicely on
-a LAMP stack. 
+a LAMP stack. <br/>
 You can download it from [here] (http://download.limesurvey.org/Latest_stable_release/limesurvey192plus-build120517.tar.gz "limesurvey").
 QuickLime is an installer for LimeSurvey. 
 
