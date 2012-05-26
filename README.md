@@ -49,7 +49,7 @@ scp -i <secret-key>.pem -r quicklime.tar.gz root@&lt;hostname&gt;:
 or simply:
 
 <code>
-scp  -r quicklime.tar.gz root@&lthostname&gt;:
+scp  -r quicklime.tar.gz root@&lt;hostname&gt;:
 </code>
 
 Then login on your brand new machine (or AMI instance):
@@ -69,6 +69,7 @@ the following file:
 
 Above all, I would recommend editing the email and the SMTP server credentials:
 
+<pre>
 <code>
 email_account='youremail@example.com'
 email_password='custom_password'
@@ -81,6 +82,7 @@ emailsmtpuser='your-smtp_user@gmail.com'
 emailsmtpssl='ssl'
 emailsmtppassword='your-smtp-password'
 </code>
+</pre>
 
 
 and then, launch the installer:
