@@ -1,0 +1,11 @@
+email_account='youremail@example.com'
+email_password='custom_password'
+siteadminbounce=''
+sitename='QuickLime - LimeSurvey'
+siteadminemail='admin@yourdomain.com'
+emailmethod='smtp'
+emailsmtphost='smtp.gmail.com'
+emailsmtpuser='your-smtp_user@gmail.com'
+emailsmtpssl='ssl'
+emailsmtppassword='password-smtp'
+

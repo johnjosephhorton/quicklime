@@ -2,10 +2,15 @@
 #
 # Paolo Lulli 2012
 
+import config
+
+
 import os
 import urllib2
 import tarfile
 import shutil
+from string import Template
+
 
 dependencies = ["mysql-client", "mysql-server", "apache2", "php5", "php5-mysql", "php-cli"]
 
@@ -72,15 +77,38 @@ class Limesurvey:
 		os.system(cmdstring)
 
 	def apache_config(self):
-		shutil.copy2('./config/apache2.template', '/etc/apache2/sites-available/limesurvey')
+		shutil.copy2('./assets/apache2.template', '/etc/apache2/sites-available/limesurvey')
 		os.symlink('/etc/apache2/sites-available/limesurvey', '/etc/apache2/sites-enabled/limesurvey')
 	
 	def limesurvey_config(self):
-		shutil.copy2('./config/config.php.template', '/var/www/limesurvey/config.php')
+		shutil.copy2('./assets/config.php.template', '/var/www/limesurvey/config.php')
 
 	def apache_restart(self):
 		restart_cmd='/etc/init.d/apache2 restart'
 		os.system(restart_cmd)
+
+	def sql_config_gen(self):
+		d = dict(email_account=config.email_account, 
+		email_password=config.email_password,
+		siteadminbounce=config.siteadminbounce,
+		sitename=config.sitename,
+		siteadminemail=config.siteadminemail,
+		emailmethod=config.emailmethod,
+		emailsmtphost=config.emailsmtphost,
+		emailsmtpuser=config.emailsmtpuser,
+		emailsmtpssl=config.emailsmtpssl,
+		emailsmtppassword=config.emailsmtppassword)
+		f = open('./assets/sql.tpl', 'r')
+		templ_string = f.read()
+		s = Template(templ_string)
+		sql = s.safe_substitute(d)
+		fw = open('/tmp/quicklime.sql', 'w')	
+		fw.write(sql)
+
+	def sql_config_load(self):
+		cmdstring = 'cat /tmp/quicklime.sql | mysql -u root '+  db_instance 
+		print 'DEBUG: ' + cmdstring
+		os.system(cmdstring)
 
 	def post_install(self):
 		cmd='curl --data-urlencode "createdbstep2=Populate database" http://127.0.0.1:80/limesurvey/admin/install/createdb.php'
@@ -100,3 +128,5 @@ if __name__ == "__main__":
 	lm.limesurvey_config()
 	lm.apache_restart()
 	lm.post_install()
+	lm.sql_config_gen()
+	lm.sql_config_load()
