@@ -15,9 +15,7 @@ LimeSurvey, the easy way
 
 QuickLime works in Ubuntu like a breeze.
 You only have to launch the script as user <code>root</code>:
-<pre><code>cd script
-./quicklime
-</code></pre>
+<code>cd script; ./quicklime </code>
 
 it will:
 
@@ -43,7 +41,7 @@ start a new instance from the following AMI: <code> ami-e1e8d395 </code>
 On the new instance, you will only need to transfer the code, i.e. doing:
 
 <code>
-scp -i <secret-key>.pem -r quicklime.tar.gz root@&lt;hostname&gt;:
+scp -i <secret-key>.pem -r quicklime.tar.gz root@hostname:
 </code>
 
 or simply:
