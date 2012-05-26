@@ -16,7 +16,7 @@ LimeSurvey, the easy way
 QuickLime works in Ubuntu like a breeze.
 You only have to launch the script as user <code>root</code>
 <br/>
-this way:
+this way:<br/>
 <code>cd script; ./quicklime </code>
 
 it will:
