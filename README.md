@@ -60,6 +60,29 @@ tar vxzf quicklime.tar.gz
 cd quicklime
 </code>
 
+Before launching the installer, there are some configurations that you can 
+specify, like an SMTP to use to send email. Rather than having to do 
+post-install configurations, you can change the configurations in 
+the following file:
+
+<code>config.py</code>
+
+Above all, I would recommend editing the email and the SMTP server credentials:
+
+<code>
+email_account='youremail@example.com'
+email_password='custom_password'
+siteadminbounce=''
+sitename='QuickLime - LimeSurvey'
+siteadminemail='admin@yourdomain.com'
+emailmethod='smtp'
+emailsmtphost='smtp.gmail.com'
+emailsmtpuser='your-smtp_user@gmail.com'
+emailsmtpssl='ssl'
+emailsmtppassword='your-smtp-password'
+</code>
+
+
 and then, launch the installer:
 
 <pre><code>cd script
