@@ -12,7 +12,7 @@ import shutil
 from string import Template
 
 
-dependencies = ["mysql-client", "mysql-server", "apache2", "php5", "php5-mysql", "php-cli"]
+dependencies = ["mysql-client", "mysql-server", "apache2", "php5", "php5-mysql"]
 
 url="http://download.limesurvey.org/Latest_stable_release/limesurvey192plus-build120517.tar.gz"
 file_name = 'limesurvey.tar.gz'
