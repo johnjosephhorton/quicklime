@@ -12,10 +12,21 @@ import shutil
 from string import Template
 
 
-dependencies = ["mysql-client", "mysql-server", "apache2", "php5", "php5-mysql", "php-cli"]
+dependencies = ["mysql-client", "mysql-server", "apache2", "php5", "php5-mysql"]
 
-url="http://download.limesurvey.org/Latest_stable_release/limesurvey192plus-build120517.tar.gz"
-file_name = 'limesurvey.tar.gz'
+# moved limesurvey.tar.gz URL to config.py, to be edited from there
+# Anyway, something changed, the *.tar.gz is not in the same place anymore
+url=config.download_url
+
+# likely in the config.py you will have: 
+#
+#    file_name = 'limesurvey.tar.gz' 
+#
+# may change if the upstream
+# distribution changes the name of the file
+file_name = config.file_name
+
+
 download_dir = '/var/www/'
 
 db_instance='limes_db'
