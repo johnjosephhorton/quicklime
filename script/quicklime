@@ -14,7 +14,10 @@ from string import Template
 
 dependencies = ["mysql-client", "mysql-server", "apache2", "php5", "php5-mysql"]
 
-url="http://download.limesurvey.org/Latest_stable_release/limesurvey192plus-build120517.tar.gz"
+# getting a HTTP 404 Not found error with this URL. I'm guessing they move them around a bit? 
+# is there some other way we can get a link to the most recent build w/o hard-wiring this info here? 
+# maybe worse-case we add it to the config.py 
+url=config.url_download
 file_name = 'limesurvey.tar.gz'
 download_dir = '/var/www/'
 
