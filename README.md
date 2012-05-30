@@ -100,8 +100,24 @@ emailsmtppassword='your-smtp-password'
 </code>
 </pre>
 
+As long as the upstream LimeSurvey distribution may change over time, rather than having 
+the repository URL hardcoded into the installer, you may need to change the download link  in the 
+same configuration file:
+<pre>
+<code>
+# Download URL of the limesurvey *.tar.gz 
+download_url='http://www.limesurvey.org/en/stable-release/finish/25-latest-stable-release/457-limesurvey192plus-build120530zip'
 
-and then, launch the installer:
+#  file_name should contain the name of the *.tar.gz archive downloaded from the internet
+file_name = 'limesurvey.tar.gz'
+</code>
+</pre>
+
+Having a local copy of the LimeSurvey is also feasible, as long as the string <code>download_url</code>
+uses a protocol supported by Python [urllib2] (http://docs.python.org/library/urllib2.html "urllib2")
+
+
+Then, you are ready to launch the installer:
 
 <pre><code>cd script
 ./quicklime
