@@ -1,25 +1,25 @@
 QuickLime
 =========
-
 Version 1.0 May 2012  
 Developed by Paolo Lulli 
-Copyright, oDesk Corporation 2012 
 
+Copyright, oDesk Corporation 2012
 GNU Public License 
 
-QuickLime is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
+    QuickLime is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
-QuickLime is distributed in the hope that it will be useful,
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
+    QuickLime is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
-For details on the GNU Public License, see <http://www.gnu.org/licenses/>.
+    For details on the GNU Public License, see <http://www.gnu.org/licenses/>.
 
 About QuickLime
----------------
+------------------------------
 
 LimeSurvey is a GPL licensed software to create surveys; it runs nicely on
 a LAMP stack. <br/>
@@ -27,7 +27,7 @@ You can download it from [here] (http://download.limesurvey.org/Latest_stable_re
 QuickLime is an installer for LimeSurvey. 
 
 LimeSurvey, the easy way
-------------------------
+------------------------------
 
 QuickLime works in Ubuntu like a breeze.
 You only have to launch the script as user <code>root</code>
