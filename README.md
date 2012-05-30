@@ -19,7 +19,7 @@ GNU General Public License for more details.
 For details on the GNU Public License, see <http://www.gnu.org/licenses/>.
 
 About QuickLime
-------------------------------
+---------------
 
 LimeSurvey is a GPL licensed software to create surveys; it runs nicely on
 a LAMP stack. <br/>
