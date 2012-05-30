@@ -27,7 +27,7 @@ You can download it from [here] (http://download.limesurvey.org/Latest_stable_re
 QuickLime is an installer for LimeSurvey. 
 
 LimeSurvey, the easy way
-------------------------------
+------------------------
 
 QuickLime works in Ubuntu like a breeze.
 You only have to launch the script as user <code>root</code>
