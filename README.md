@@ -100,9 +100,11 @@ emailsmtppassword='your-smtp-password'
 </code>
 </pre>
 
-As long as the upstream LimeSurvey distribution may change over time, rather than having 
-the repository URL hardcoded into the installer, you may need to change the download link  in the 
+As long as the upstream LimeSurvey distribution may change over time, 
+rather than having the repository URL hardcoded into the installer, you 
+may need to change the download link  in the 
 same configuration file:
+
 <pre>
 <code>
 # Download URL of the limesurvey *.tar.gz 
