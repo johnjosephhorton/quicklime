@@ -17,7 +17,16 @@ dependencies = ["mysql-client", "mysql-server", "apache2", "php5", "php5-mysql"]
 # moved limesurvey.tar.gz URL to config.py, to be edited from there
 # Anyway, something changed, the *.tar.gz is not in the same place anymore
 url=config.download_url
-file_name = 'limesurvey.tar.gz'
+
+# likely in the config.py you will have: 
+#
+#    file_name = 'limesurvey.tar.gz' 
+#
+# may change if the upstream
+# distribution changes the name of the file
+file_name = config.file_name
+
+
 download_dir = '/var/www/'
 
 db_instance='limes_db'
