@@ -1,4 +1,6 @@
 #! /bin/sh -x
 
-./aws describe-regions
+cd $(dirname $0)
+
+./lib/aws describe-regions
 
